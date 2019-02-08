@@ -14,6 +14,7 @@ import (
 
 var _ http.Handler = &Handler{}
 
+// TestHandler checks a case when 
 // nolint: gocyclo
 func TestHandler(t *testing.T) {
 	for _, tc := range []struct {

@@ -12,6 +12,7 @@ import (
 
 var _ imageserver_image.Processor = &ResizeProcessor{}
 
+// TestResizeProcessorProcess checks a case when 
 // nolint: gocyclo
 func TestResizeProcessorProcess(t *testing.T) {
 	nim, err := imageserver_image.Decode(imageserver_testdata.Medium)

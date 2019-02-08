@@ -120,7 +120,7 @@ func TestImageUnmarshalBinaryErrorDataMaxLen(t *testing.T) {
 	}
 }
 
-// TestImageMarshalBugBuffer is a test for a bug with a misused byte buffer pool.
+// TestImageMarshalBugByteBufferPool is a test for a bug with a misused byte buffer pool.
 // Successive calls to Image.MarshalBinary() write to the same byte slice.
 func TestImageMarshalBugByteBufferPool(t *testing.T) {
 	d1, err := testdata.Small.MarshalBinary()

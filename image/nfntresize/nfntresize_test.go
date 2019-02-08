@@ -11,6 +11,7 @@ import (
 
 var _ imageserver_image.Processor = &Processor{}
 
+// TestProcessor checks a case when 
 // nolint: gocyclo
 func TestProcessor(t *testing.T) {
 	nim, err := imageserver_image.Decode(imageserver_testdata.Medium)

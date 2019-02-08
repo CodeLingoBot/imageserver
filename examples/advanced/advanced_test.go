@@ -10,6 +10,7 @@ import (
 	"github.com/pierrre/imageserver/testdata"
 )
 
+// Test checks a case when 
 // nolint: gocyclo
 func Test(t *testing.T) {
 	h := newHTTPHandler()
